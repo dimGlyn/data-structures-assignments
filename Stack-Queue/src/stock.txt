@@ -1,0 +1,6 @@
+buy 50 price 25
+buy 40 price 22
+buy 30 price 33
+sell 110 price 30
+buy 40 price 10
+sell 5 price 30
