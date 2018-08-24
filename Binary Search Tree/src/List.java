@@ -5,7 +5,6 @@ public class List {
     private class Node {
 
         private Node next;
-
         private Suspect item;
 
         public Node(Object item) {
@@ -24,13 +23,10 @@ public class List {
         public Suspect getItem() {
             return item;
         }
-
     }
-
+    
     private static int size = 0;
-
     public String toString() {
-
         String output = "";
         if (head != null) {
             Node current = head.getNext();
@@ -39,7 +35,6 @@ public class List {
                 current = current.getNext();
             }
         }
-
         this.size = 0;
         return output;
     }
@@ -53,23 +48,17 @@ public class List {
         Node current = head;
 
         if (current != null) {
-
             while (current.getNext() != null) {
                 current = current.getNext();
             }
-
             current.setNext(temp);
         }
-
         size++;
-
     }
 
     public int size() {
-
         return this.size;
     }
-
 
     public boolean isEmpty() {
         return size() == 0 ? true : false;
